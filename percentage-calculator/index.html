@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Percentage Calculator – Calculate Percentage Online</title>
+<meta name="description" content="Calculate percentage from marks, find X percent of a number, or compute percentage change — free and instant.">
+<link rel="canonical" href="https://studenttools-hub.netlify.app/percentage-calculator/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StudentTools Hub">
+<meta property="og:title" content="Percentage Calculator – Calculate Percentage Online">
+<meta property="og:description" content="Calculate percentage from marks, find X percent of a number, or compute percentage change — free and instant.">
+<meta property="og:url" content="https://studenttools-hub.netlify.app/percentage-calculator/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Percentage Calculator – Calculate Percentage Online">
+<meta name="twitter:description" content="Calculate percentage from marks, find X percent of a number, or compute percentage change — free and instant.">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#4f46e5">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Percentage Calculator – Calculate Percentage Online", "description": "Calculate percentage from marks, find X percent of a number, or compute percentage change — free and instant.", "url": "https://studenttools-hub.netlify.app/percentage-calculator/", "isPartOf": {"@type": "WebSite", "name": "StudentTools Hub", "url": "https://studenttools-hub.netlify.app"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://studenttools-hub.netlify.app/"}, {"@type": "ListItem", "position": 2, "name": "Percentage Calculator"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I calculate percentage from marks?", "acceptedAnswer": {"@type": "Answer", "text": "Divide your obtained marks by the total marks and multiply by 100. Example: 425 ÷ 500 × 100 = 85%."}}, {"@type": "Question", "name": "How do I find X percent of a number?", "acceptedAnswer": {"@type": "Answer", "text": "Divide the percentage by 100 and multiply by the number. Example: 20% of 1500 = 0.20 × 1500 = 300."}}, {"@type": "Question", "name": "How is percentage increase calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Subtract the old value from the new value, divide by the old value, and multiply by 100."}}, {"@type": "Question", "name": "What is the difference between percent and percentage points?", "acceptedAnswer": {"@type": "Answer", "text": "A rise from 40% to 50% is a 10 percentage-point rise, but a 25% relative increase. They are often confused — now you know the difference."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Percentage Calculator", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "description": "Calculate percentage from marks, find X percent of a number, or compute percentage change — free and instant.", "url": "https://studenttools-hub.netlify.app/percentage-calculator/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<!-- Analytics: paste your GA4 / AdSense snippets here (see assets/js/config.js) -->
+</head>
+<body data-tool="percentage">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="StudentTools Hub home"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#4f46e5"/><path d="M32 14 10 24l22 10 18-8.2V38h4V24L32 14z" fill="#fff"/><path d="M18 34v10c0 4.4 6.3 8 14 8s14-3.6 14-8V34l-14 6.4L18 34z" fill="#c7d2fe"/></svg><span>StudentTools Hub</span></a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button><nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#tools">Tools</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Percentage Calculator</li></ol></nav>
+<div class="page-hero"><h1>Percentage Calculator</h1><p class="lede">Three percentage tools in one: convert marks to percentage, find X percent of any number, and compute percentage increase or decrease.</p></div>
+<div class="tool-layout">
+<div>
+<div class="tool-card"><form id="pct-form" novalidate>
+<div id="pct-error" class="form-error"></div>
+<div class="field"><label for="pct-mode">Calculation type</label>
+<select id="pct-mode">
+<option value="basic">Marks → Percentage (obtained / total)</option>
+<option value="of">X% of a number</option>
+<option value="change">Percentage increase / decrease</option>
+</select></div>
+<div class="field"><label for="pct-a" id="pct-a-label">Obtained marks</label>
+<input type="number" id="pct-a" step="any" inputmode="decimal" placeholder="e.g. 85"></div>
+<div class="field"><label for="pct-b" id="pct-b-label">Total marks</label>
+<input type="number" id="pct-b" step="any" inputmode="decimal" placeholder="e.g. 100"></div>
+<div class="tool-actions"><button type="submit" class="btn block">Calculate</button></div>
+<div class="result" id="pct-result" aria-live="polite"><div class="lbl">Result</div>
+<div class="big" id="pct-value">–</div><dl id="pct-detail"></dl></div>
+</form></div>
+<!-- AdSense: in-content ad slot (paste ad code here after approval) -->
+<div class="prose" style="margin-top:1.5rem">
+<h2>How to use the percentage calculator</h2>
+<ol><li>Choose the calculation type from the dropdown.</li><li><strong>Marks → Percentage:</strong> enter obtained marks and total marks.</li><li><strong>X% of a number:</strong> enter the percentage and the number.</li><li><strong>Increase / decrease:</strong> enter the original and the new value.</li></ol>
+<h2>Formula</h2>
+<div class="formula">Percentage = (Obtained ÷ Total) × 100<br>X% of Y = (X ÷ 100) × Y<br>Change % = ((New − Old) ÷ Old) × 100</div>
+<h2>Worked example</h2>
+<div class="example"><strong>Example:</strong> You scored 425 out of 500. Percentage = (425 ÷ 500) × 100 = <strong>85%</strong>. A shop discount of 20% on Rs. 1500 = (20 ÷ 100) × 1500 = <strong>Rs. 300 off</strong>.</div>
+<h2>Frequently asked questions</h2>
+<div class="faq-list">
+<details class="faq"><summary>How do I calculate percentage from marks?</summary><div class="a"><p>Divide your obtained marks by the total marks and multiply by 100. Example: 425 ÷ 500 × 100 = 85%.</p></div></details>
+<details class="faq"><summary>How do I find X percent of a number?</summary><div class="a"><p>Divide the percentage by 100 and multiply by the number. Example: 20% of 1500 = 0.20 × 1500 = 300.</p></div></details>
+<details class="faq"><summary>How is percentage increase calculated?</summary><div class="a"><p>Subtract the old value from the new value, divide by the old value, and multiply by 100.</p></div></details>
+<details class="faq"><summary>What is the difference between percent and percentage points?</summary><div class="a"><p>A rise from 40% to 50% is a 10 percentage-point rise, but a 25% relative increase. They are often confused — now you know the difference.</p></div></details>
+</div>
+</div>
+</div>
+<aside class="side"><div class="card"><h3>All student tools</h3><ul><li><a href="/cgpa-calculator/">CGPA Calculator</a></li><li><a href="/gpa-calculator/">GPA Calculator</a></li><li><a href="/attendance-calculator/">Attendance Calculator</a></li><li><a href="/marks-calculator/">Marks Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li></ul></div><div class="card"><h3>Why students trust us</h3><ul><li>✓ 100% free, no signup</li><li>✓ Works on any phone</li><li>✓ Your data never leaves your browser</li></ul></div></aside>
+</div>
+<div class="section" style="padding-top:0"><h2>Related tools</h2><div class="grid cols-3"><div class="card"><h3>CGPA Calculator</h3><p>Combine semester GPAs into your cumulative CGPA.</p><a class="go" href="/cgpa-calculator/">Use CGPA Calculator →</a></div><div class="card"><h3>GPA Calculator</h3><p>Convert subject grades and credit hours into GPA.</p><a class="go" href="/gpa-calculator/">Use GPA Calculator →</a></div><div class="card"><h3>Attendance Calculator</h3><p>Attendance % plus how many classes you can miss.</p><a class="go" href="/attendance-calculator/">Use Attendance Calculator →</a></div></div></div>
+</div></main>
+<footer class="site-footer"><div class="wrap"><div class="cols"><div><a class="brand" href="/"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#4f46e5"/><path d="M32 14 10 24l22 10 18-8.2V38h4V24L32 14z" fill="#fff"/><path d="M18 34v10c0 4.4 6.3 8 14 8s14-3.6 14-8V34l-14 6.4L18 34z" fill="#c7d2fe"/></svg><span>StudentTools Hub</span></a><p style="margin-top:.6rem;max-width:300px">Free online student tools. Calculate GPA, CGPA, percentage, attendance and more — fast, private, no signup.</p></div><div><h4>Tools</h4><ul><li><a href="/cgpa-calculator/">CGPA Calculator</a></li><li><a href="/gpa-calculator/">GPA Calculator</a></li><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/attendance-calculator/">Attendance Calculator</a></li><li><a href="/marks-calculator/">Marks Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li></ul></div><div><h4>Site</h4><ul><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/faq/">FAQ</a></li></ul></div><div><h4>Legal</h4><ul><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/disclaimer/">Disclaimer</a></li></ul></div></div><div class="fine">© 2026 StudentTools Hub. All tools run in your browser — your data never leaves your device.</div></div></footer>
+<script src="/assets/js/config.js" defer></script>
+<script src="/assets/js/math.js" defer></script>
+<script src="/assets/js/tools.js" defer></script>
+</body>
+</html>

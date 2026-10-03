@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CGPA Calculator – Free Online CGPA Calculator for Students</title>
+<meta name="description" content="Calculate your CGPA easily using semester GPA and credit hours with this free online CGPA calculator for students.">
+<link rel="canonical" href="https://studenttools-hub.netlify.app/cgpa-calculator/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StudentTools Hub">
+<meta property="og:title" content="CGPA Calculator – Free Online CGPA Calculator for Students">
+<meta property="og:description" content="Calculate your CGPA easily using semester GPA and credit hours with this free online CGPA calculator for students.">
+<meta property="og:url" content="https://studenttools-hub.netlify.app/cgpa-calculator/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CGPA Calculator – Free Online CGPA Calculator for Students">
+<meta name="twitter:description" content="Calculate your CGPA easily using semester GPA and credit hours with this free online CGPA calculator for students.">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#4f46e5">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "CGPA Calculator – Free Online CGPA Calculator for Students", "description": "Calculate your CGPA easily using semester GPA and credit hours with this free online CGPA calculator for students.", "url": "https://studenttools-hub.netlify.app/cgpa-calculator/", "isPartOf": {"@type": "WebSite", "name": "StudentTools Hub", "url": "https://studenttools-hub.netlify.app"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://studenttools-hub.netlify.app/"}, {"@type": "ListItem", "position": 2, "name": "CGPA Calculator"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is CGPA?", "acceptedAnswer": {"@type": "Answer", "text": "CGPA stands for Cumulative Grade Point Average. It is the weighted average of the GPAs you earned in every semester so far, where semesters with more credit hours count more."}}, {"@type": "Question", "name": "How is CGPA calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply each semester's GPA by its credit hours to get quality points, add all quality points together, then divide by the total credit hours across all semesters."}}, {"@type": "Question", "name": "What is the difference between GPA and CGPA?", "acceptedAnswer": {"@type": "Answer", "text": "GPA measures one semester (or term). CGPA is cumulative — it combines every semester you have completed into a single number."}}, {"@type": "Question", "name": "What is considered a good CGPA?", "acceptedAnswer": {"@type": "Answer", "text": "On a 4.0 scale, 3.5 and above is generally considered strong, but expectations differ by university, country and field. Always check your own institution's standards."}}, {"@type": "Question", "name": "Can my CGPA improve after a bad semester?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Because CGPA is a weighted average, strong performance in later semesters — especially ones with more credit hours — pulls it back up."}}, {"@type": "Question", "name": "My university uses a 5.0 or 10.0 scale. Does this work?", "acceptedAnswer": {"@type": "Answer", "text": "The math is the same on any scale: enter your semester GPAs as they appear on your transcript and the calculator handles the rest."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "CGPA Calculator", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "description": "Calculate your CGPA easily using semester GPA and credit hours with this free online CGPA calculator for students.", "url": "https://studenttools-hub.netlify.app/cgpa-calculator/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<!-- Analytics: paste your GA4 / AdSense snippets here (see assets/js/config.js) -->
+</head>
+<body data-tool="cgpa">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="StudentTools Hub home"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#4f46e5"/><path d="M32 14 10 24l22 10 18-8.2V38h4V24L32 14z" fill="#fff"/><path d="M18 34v10c0 4.4 6.3 8 14 8s14-3.6 14-8V34l-14 6.4L18 34z" fill="#c7d2fe"/></svg><span>StudentTools Hub</span></a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button><nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#tools">Tools</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">CGPA Calculator</li></ol></nav>
+<div class="page-hero"><h1>CGPA Calculator</h1><p class="lede">Calculate your Cumulative Grade Point Average (CGPA) in seconds. Enter each semester's GPA and credit hours — the calculator does the weighted math for you.</p></div>
+<div class="tool-layout">
+<div>
+<div class="tool-card"><form id="cgpa-form" novalidate>
+<div id="cgpa-error" class="form-error"></div>
+<div class="row-head cgpa" aria-hidden="true"><span class="h">Semester GPA</span><span class="h">Credit hours</span><span></span></div>
+<div id="cgpa-rows"></div>
+<div class="tool-actions"><button type="button" class="btn ghost small" id="cgpa-add">+ Add semester</button></div>
+<div class="tool-actions"><button type="submit" class="btn block">Calculate CGPA</button>
+<button type="button" class="btn ghost block" id="cgpa-clear">Clear</button></div>
+<div class="result" id="cgpa-result" aria-live="polite"><div class="lbl">Your CGPA</div>
+<div class="big" id="cgpa-value">–</div><dl id="cgpa-detail"></dl></div>
+</form></div>
+<!-- AdSense: in-content ad slot (paste ad code here after approval) -->
+<div class="prose" style="margin-top:1.5rem">
+<h2>How to use the cgpa calculator</h2>
+<ol><li>Add a row for every completed semester using <strong>+ Add semester</strong>.</li><li>Enter the <strong>GPA</strong> you earned that semester (e.g. 3.50).</li><li>Enter the <strong>credit hours</strong> you took that semester (e.g. 18).</li><li>Click <strong>Calculate CGPA</strong> to see your cumulative result instantly.</li></ol>
+<h2>Formula</h2>
+<div class="formula">CGPA = Total Quality Points ÷ Total Credit Hours<br>where Quality Points for a semester = Semester GPA × Credit Hours</div>
+<h2>Worked example</h2>
+<div class="example"><strong>Example:</strong> Semester 1: GPA 3.50 × 18 credits = 63.0 points. Semester 2: GPA 3.20 × 15 credits = 48.0 points. CGPA = (63.0 + 48.0) ÷ (18 + 15) = 111 ÷ 33 = <strong>3.36</strong>.</div>
+<h2>Frequently asked questions</h2>
+<div class="faq-list">
+<details class="faq"><summary>What is CGPA?</summary><div class="a"><p>CGPA stands for Cumulative Grade Point Average. It is the weighted average of the GPAs you earned in every semester so far, where semesters with more credit hours count more.</p></div></details>
+<details class="faq"><summary>How is CGPA calculated?</summary><div class="a"><p>Multiply each semester's GPA by its credit hours to get quality points, add all quality points together, then divide by the total credit hours across all semesters.</p></div></details>
+<details class="faq"><summary>What is the difference between GPA and CGPA?</summary><div class="a"><p>GPA measures one semester (or term). CGPA is cumulative — it combines every semester you have completed into a single number.</p></div></details>
+<details class="faq"><summary>What is considered a good CGPA?</summary><div class="a"><p>On a 4.0 scale, 3.5 and above is generally considered strong, but expectations differ by university, country and field. Always check your own institution's standards.</p></div></details>
+<details class="faq"><summary>Can my CGPA improve after a bad semester?</summary><div class="a"><p>Yes. Because CGPA is a weighted average, strong performance in later semesters — especially ones with more credit hours — pulls it back up.</p></div></details>
+<details class="faq"><summary>My university uses a 5.0 or 10.0 scale. Does this work?</summary><div class="a"><p>The math is the same on any scale: enter your semester GPAs as they appear on your transcript and the calculator handles the rest.</p></div></details>
+</div>
+</div>
+</div>
+<aside class="side"><div class="card"><h3>All student tools</h3><ul><li><a href="/gpa-calculator/">GPA Calculator</a></li><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/attendance-calculator/">Attendance Calculator</a></li><li><a href="/marks-calculator/">Marks Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li></ul></div><div class="card"><h3>Why students trust us</h3><ul><li>✓ 100% free, no signup</li><li>✓ Works on any phone</li><li>✓ Your data never leaves your browser</li></ul></div></aside>
+</div>
+<div class="section" style="padding-top:0"><h2>Related tools</h2><div class="grid cols-3"><div class="card"><h3>GPA Calculator</h3><p>Convert subject grades and credit hours into GPA.</p><a class="go" href="/gpa-calculator/">Use GPA Calculator →</a></div><div class="card"><h3>Percentage Calculator</h3><p>Marks to percentage, X% of Y, and change.</p><a class="go" href="/percentage-calculator/">Use Percentage Calculator →</a></div><div class="card"><h3>Attendance Calculator</h3><p>Attendance % plus how many classes you can miss.</p><a class="go" href="/attendance-calculator/">Use Attendance Calculator →</a></div></div></div>
+</div></main>
+<footer class="site-footer"><div class="wrap"><div class="cols"><div><a class="brand" href="/"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#4f46e5"/><path d="M32 14 10 24l22 10 18-8.2V38h4V24L32 14z" fill="#fff"/><path d="M18 34v10c0 4.4 6.3 8 14 8s14-3.6 14-8V34l-14 6.4L18 34z" fill="#c7d2fe"/></svg><span>StudentTools Hub</span></a><p style="margin-top:.6rem;max-width:300px">Free online student tools. Calculate GPA, CGPA, percentage, attendance and more — fast, private, no signup.</p></div><div><h4>Tools</h4><ul><li><a href="/cgpa-calculator/">CGPA Calculator</a></li><li><a href="/gpa-calculator/">GPA Calculator</a></li><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/attendance-calculator/">Attendance Calculator</a></li><li><a href="/marks-calculator/">Marks Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li></ul></div><div><h4>Site</h4><ul><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/faq/">FAQ</a></li></ul></div><div><h4>Legal</h4><ul><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/disclaimer/">Disclaimer</a></li></ul></div></div><div class="fine">© 2026 StudentTools Hub. All tools run in your browser — your data never leaves your device.</div></div></footer>
+<script src="/assets/js/config.js" defer></script>
+<script src="/assets/js/math.js" defer></script>
+<script src="/assets/js/tools.js" defer></script>
+</body>
+</html>
